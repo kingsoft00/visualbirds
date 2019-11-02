@@ -7,7 +7,7 @@ from django.urls import reverse
 
 # Main page to be templated
 def index(request):
-    return render(request, 'bird_identifier/base.html')
+    return render(request, 'bird_identifier/information.html')
 
 # Contains results
 def results(request):
