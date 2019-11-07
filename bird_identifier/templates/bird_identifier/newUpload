@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Birds Identifier Web App</title>
+	<link rel = "icon" href = "https://usercontent2.hubstatic.com/7923939_f520.jpg" type = "image/x-icon"> 
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<header>
+		<img src="images/nc_birds.jpg" alt="nc_birds" width="85" height="65">
+		<h2>Welcome to NC birds App!!!</h2>
+	</header>
+	<main>
+		<aside>
+			<ul  style="list-style-type:none;">
+				<li><a href="base.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="Upload.html">Upload Image</a></li>
+				<li><a href="Contact.html">Contact</a></li>
+			</ul>
+		</aside>
+		<section>
+			<h2>Send e-mail to example@gmail.com:</h2>
+			<form action="mailto:example@gmail.com" method="post" enctype="text/plain">
+			Name:<br>
+			<input type="text" name="name"><br>
+			E-mail:<br>
+			<input type="text" name="mail"><br>
+			Comment:<br>
+			<input type="text" name="comment" size="50"><br><br>
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
+			</form>
+		</section>
+	</main>
+	<footer><p>&copy;Copyright 2019 "Group Name"</p></footer>
+	<script src="griup.js"></script>
+</body>
+</html>
