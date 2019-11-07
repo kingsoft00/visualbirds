@@ -1,0 +1,83 @@
+html {
+	background-image: url("../images/giphy.gif");
+	background-size: cover;
+}
+header h2 {
+	font-size: 250%;
+	
+}
+
+header {
+	background-image: -webkit-linear-gradient(45deg, white 0%, #33ff7f, yellow 100%);
+    background-image: -moz-linear-gradient(45deg, white 0%, #33ff7f, yellow 100%);
+    background-image: -o-linear-gradient(45deg, white 0%, #33ff7f, yellow 100%);
+    background-image: linear-gradient(45deg, white 0%, #33ff7f, yellow 100%);
+	background-image: -ms-linear-gradient(45deg, white 0%, #33ff7f, yellow 100%);
+	background-image: -khtml-linear-gradient(45deg, white 0%, #33ff7f, yellow 100%);
+    padding: .9375em 1.875%;
+    border-bottom: 1px solid black;
+}
+header img {
+	float: left;
+	text-indent: 25px;
+}
+h2, p {
+	margin: 3px;
+	padding: 0.2rem 0.2rem;
+}
+header h2{
+	font-weight: Bold;
+	color: black;
+	text-indent: 25px;
+	font-style: italic;
+	text-shadow: 2px 2px 5px black;
+}
+ul li a{
+	display: flex;
+	flex-flow: column;
+	border:1px solid black;
+	padding: 5px;
+	background-color: green;
+	width: 100px;
+	border-spacing: 10px;
+	text-decoration: none;
+	color: black;
+	margin: 5px 0 5px 0;
+}
+
+
+section {
+	margin-left: 180px;
+	margin-top: -70px;
+}
+section p {
+	margin: 0;
+	font-size: 130%;
+}
+
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+	width: 700px;
+	border: 5px solid;
+	box-shadow: 2px 2px 5px black;
+	margin: auto;
+}
+
+
+footer { 
+	clear: both;
+	border-top: 2px solid black;
+	padding: .9375em  1.875%;
+    background-image: -webkit-linear-gradient(45deg, yellow 0%, #33ff7f, white 100%);
+    background-image: -moz-linear-gradient(45deg, yellow 0%, #33ff7f, white 100%);
+    background-image: -o-linear-gradient(45deg, yellow 0%, #33ff7f, white 100%);
+    background-image: linear-gradient(45deg, yellow 0%, #33ff7f, white 100%);
+	background-image: -ms-linear-gradient(45deg, yellow 0%, #33ff7f, white 100%);
+	background-image: -khtml-linear-gradient(45deg, yellow 0%, #33ff7f, white 100%);
+} 
+footer p {
+	font-size: 90%;
+	text-align: center;
+}
