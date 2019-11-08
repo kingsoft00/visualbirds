@@ -24,3 +24,6 @@ class Bird(models.Model):
     
     def __str__(self):
         pass
+
+class ModelWithFileField(models.Model):
+    user_photo = models.ImageField(upload_to='results/')
