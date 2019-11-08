@@ -13,6 +13,7 @@ CONSERVATION_CHOICES = (
 
 # Create your models here.
 class Bird(models.Model):
+    watson_id = models.IntegerField(default=0)
     common_name = models.CharField(max_length=100)
     scientific_name = models.CharField(max_length=100)
     wingspan = models.CharField(max_length=100)
