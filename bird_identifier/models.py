@@ -21,6 +21,7 @@ class Bird(models.Model):
     lifespan = models.IntegerField(default=0)
     conservation_status = models.CharField(max_length=100, choices=CONSERVATION_CHOICES, default='Not evaluated')
     speed = models.IntegerField(default=0)
+    image = models.ImageField()
     fact = models.CharField(max_length=100)
     
     def __str__(self):
