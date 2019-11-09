@@ -13,6 +13,7 @@ CONSERVATION_CHOICES = (
 
 # Create your models here.
 class Bird(models.Model):
+    watson_id = models.IntegerField(default=0)
     common_name = models.CharField(max_length=100)
     scientific_name = models.CharField(max_length=100)
     wingspan = models.CharField(max_length=100)
@@ -20,10 +21,8 @@ class Bird(models.Model):
     lifespan = models.IntegerField(default=0)
     conservation_status = models.CharField(max_length=100, choices=CONSERVATION_CHOICES, default='Not evaluated')
     speed = models.IntegerField(default=0)
+    image = models.ImageField()
     fact = models.CharField(max_length=100)
-    
-    def __str__(self):
-        pass
 
 class ModelWithFileField(models.Model):
     user_photo = models.ImageField(upload_to='results/')

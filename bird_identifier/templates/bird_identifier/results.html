@@ -2,6 +2,19 @@
 
 {% block content %}
 
-<h1>Results go here</h1>
+<img src="{{ bird.image.url }}"/>
+
+<tbody>
+    <tr>
+        <td>{{ bird.common_name }}</td>
+        <td>{{ bird.scientific_name }}</td>
+        <td>{{ bird.wingspan }}</td>
+        <td>{{ bird.mass }}</td>
+        <td>{{ bird.lifespan }}</td>
+        <td>{{ bird.conservation_status }}</td>
+        <td>{{ bird.speed }}</td>
+        <td>{{ bird.fact }}</td>
+    </tr>
+</tbody>
 
 {% endblock %}
