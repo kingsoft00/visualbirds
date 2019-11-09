@@ -67,7 +67,11 @@ def index(request):
 
 # Contains results
 def results(request, highest_score):
-    return render(request, 'bird_identifier/results.html')
+
+    highest_score_bird = Bird.objects.get(watson_id=highest_score[0])
+    context = {"bird" : highest_score_bird}
+
+    return render(request, 'bird_identifier/results.html', context)
 
 def success(request):
     return HttpResponse('Success')

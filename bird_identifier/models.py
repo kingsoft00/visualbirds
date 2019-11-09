@@ -23,9 +23,6 @@ class Bird(models.Model):
     speed = models.IntegerField(default=0)
     image = models.ImageField()
     fact = models.CharField(max_length=100)
-    
-    def __str__(self):
-        pass
 
 class ModelWithFileField(models.Model):
     user_photo = models.ImageField(upload_to='results/')
