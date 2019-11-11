@@ -1,0 +1,59 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static "bird_identifier/styles/base.css" %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+		<style>
+			h1, h2 {
+				text-align: center;
+				font-style: italic;
+				}
+			blockquote:first-letter { 
+				font-size: 200%;
+				}
+			body {
+				font-family: "Times New Roman", Times, serif;
+				}
+			img { 
+				float: left; 
+				padding-center: 1.875%;  
+				width: 10.625%;
+				height: 7%;
+				} 
+		</style>
+	</head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top mb-5 shadow">
+            <div class="container">
+				<img src="images/beach-birds.jpg" alt="Beach-Birds" width="100" height="80">
+				<a class="navbar-brand" href="#">Visualbirds</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                  <li>
+                    <a class="nav-link" href="{% url 'index' %}">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'upload' %}">Upload</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+          <!-- Block this out to use in upload and results -->
+          <div class="container">
+            <div class="card border-0 shadow my-5">
+              <div class="card-body p-5">
+				<h1>Visualbirds</h1>
+				<h2>CSC 450 Project</h2>
+				<blockquote>Enter information about the project here.</blockquote>
+              </div>
+            </div>
+          </div>
+    </body>
+</html>
