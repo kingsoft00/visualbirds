@@ -1,0 +1,13 @@
+{% extends "bird_identifier/base.html" %}
+
+{% block content %}
+
+	<form method="POST" enctype="multipart/form-data">
+		<input id="file" name="file" type="file" />
+		<input type="submit" value="Submit" id="submit" />	
+		<h2><blockquote><strong>Note:</strong> You should choose an image which is one of our NC marine birds 
+		such as <strong>Laughing Gull Breeding, Ring Billed Gull Adult, Canada Goose, Brown Pelican, Great Egret, Snowy Egret,
+		Osprey, Killeer, Greater Yellowlegs, Laughing Gull Nonbreeding, and Ring Billed Gull Immature</strong>.</blockquote></h2>
+	</form>
+  
+{% endblock %}
